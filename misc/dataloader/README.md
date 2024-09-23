@@ -1,4 +1,4 @@
-# NV-VOT211
+# Tutorial for running the script
 The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](www.google.com)\]
 # How to benchmark:
 ## download the dataset
