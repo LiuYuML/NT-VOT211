@@ -12,3 +12,7 @@ After the proper revision, the content should appear as shown in the image below
 ![image](https://github.com/user-attachments/assets/0398cc28-d59b-4581-a1bc-9983fc158e74)
 
 ## revise the content of local.py file
+In the same directory where you placed the `nt_vot_211dataset.py` file, locate the `local.py` file. please add the following code:
+```python
+settings.davis_dir = '<path-to-your-NT-VOT211 dataset>'
+```
