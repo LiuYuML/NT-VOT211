@@ -17,4 +17,4 @@ In the same directory where you placed the `nt_vot_211dataset.py` file, locate t
 settings.nt_vot211_path = '<path-to-your-NT-VOT211 dataset>'
 ```
 ## run the evaluation
-replace the original  `--dataset xxx` into `--dataset ntvot211` will run the algorithm on the propsoed dataset
+When executing the original test command, replace the existing `--dataset xxx` argument with `--dataset ntvot211`.
