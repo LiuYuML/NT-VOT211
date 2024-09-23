@@ -4,5 +4,5 @@ If you are using the official [pytracking](https://github.com/visionml/pytrackin
 ![image](https://github.com/user-attachments/assets/8bf7bbab-360c-4d6d-8707-291df8d403e1)
 
 ## revise the content of .py file
-In the same directory you put the `nt_vot_211dataset.py`, there is a `dataset.py`, please add this 'ntvot211=DatasetInfo(module=pt % "nt_vot_211", class_name="NT_VOT211Dataset", kwargs=dict()),' to the line 10. A proper revision should make the content look like this:
+In the same directory you put the `nt_vot_211dataset.py`, there is a `dataset.py`, please add this `ntvot211=DatasetInfo(module=pt % "nt_vot_211", class_name="NT_VOT211Dataset", kwargs=dict()),` to the line 10. A proper revision should make the content look like this:
 ![image](https://github.com/user-attachments/assets/0398cc28-d59b-4581-a1bc-9983fc158e74)
