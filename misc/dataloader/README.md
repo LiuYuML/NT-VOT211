@@ -14,5 +14,7 @@ After the proper revision, the content should appear as the image below:
 ## revise the content of local.py file
 In the same directory where you placed the `nt_vot_211dataset.py` file, locate the `local.py` file. please add the following code:
 ```python
-settings.davis_dir = '<path-to-your-NT-VOT211 dataset>'
+settings.nt_vot211_path = '<path-to-your-NT-VOT211 dataset>'
 ```
+## run the evaluation
+replace the original  `--dataset xxx` into `--dataset ntvot211` will run the algorithm on the propsoed dataset
