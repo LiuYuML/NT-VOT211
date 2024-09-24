@@ -5,4 +5,5 @@ To participate in our competition, hosted on [EvalAI](https://eval.ai), you'll n
 ## Find our challenge
 Once you have an `EvalAI` account, you can access our challenge through this [link](https://eval.ai/web/challenges/challenge-page/2375/).
 
-## transform your raw results into .json file
+## Transform your raw results into .json file
+Here, we provide a 
