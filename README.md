@@ -13,4 +13,4 @@ Please note that our challenge is divided into two phases: the **public phase** 
 - In the **public phase**, you are limited to a maximum of **1 submission per month**.
 
 We have implemented these limits to maintain a clean and readable leaderboard. We encourage all challengers to submit only their most competitive results on the public leaderboard.
-To evaluate your results, please follow this [tutorial](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/evaluation%20server). 
+To evaluate your results, please follow this [tutorial](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/evaluation%20server).
