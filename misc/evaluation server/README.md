@@ -6,4 +6,8 @@ To participate in our competition, hosted on [EvalAI](https://eval.ai), you'll n
 Once you have an `EvalAI` account, you can access our challenge through this [link](https://eval.ai/web/challenges/challenge-page/2375/).
 
 ## Transform your raw results into .json file
-Here, we provide a 
+Here, we provide a `converter.py` to help you transform your raw results into .json file. you can run the command 
+```
+python converter.py
+```
+directly, after you have set the variable on line  
