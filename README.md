@@ -6,3 +6,11 @@ You can download our dataset [here](https://zenodo.org/records/13768180?preview=
 ## run the evaluation script
 Please follow these step-by-step [instructions](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/dataloader) to evaluate your algorithm.
 ## Evaluation on Server
+**Challenge Phases:**
+Please note that our challenge is divided into two phases: the **public phase** and the **private phase**.
+
+- In the **private phase**, you are allowed to submit a maximum of **100 submissions per day**.
+- In the **public phase**, you are limited to a maximum of **1 submission per month**.
+
+We have implemented these limits to maintain a clean and readable leaderboard. We encourage all challengers to submit only their most competitive results on the public leaderboard.
+To evaluate your results, please follow this [tutorial](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/evaluation%20server). 
