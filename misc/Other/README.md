@@ -42,5 +42,6 @@ We have provided calculated attributions for the following benchmarks:
 - `NAT2021`
 - `UAVDark135`
 
-You can download the attributions from the following link:
-[meta.zip](https://github.com/LiuYuML/NV-VOT211/blob/main/misc/Other/meta.zip)
+You can download the attributions from [here](https://github.com/LiuYuML/NV-VOT211/blob/main/misc/Other/meta.zip)
+
+The scripts for attribution calculation can be found [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other/scripts)
