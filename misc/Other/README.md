@@ -32,4 +32,15 @@ Press `d` on the last frame or Click `skip` to complete the annotation for the c
 
 
 # Meta information
-We provide the calculated attributions for `NT-VOT211`,`LaSOT`,`Nfs`,`AVisT`,`OTB100`,`DarkTrack2021`,`NAT2021` and `UAVDark135` in `meta.zip`
+We have provided calculated attributions for the following benchmarks:
+- `NT-VOT211`
+- `LaSOT`
+- `Nfs`
+- `AVisT`
+- `OTB100`
+- `DarkTrack2021`
+- `NAT2021`
+- `UAVDark135`
+
+You can download the attributions from the following link:
+[meta.zip](https://github.com/LiuYuML/NV-VOT211/blob/main/misc/Other/meta.zip)
