@@ -29,3 +29,7 @@ Click `out of view` or select `Occlusion` before drawing the rectangle to mark t
 
 ## Finishing the Annotation for Current Video
 Press `d` on the last frame or Click `skip` to complete the annotation for the current video.
+
+
+# Meta information
+We provide the calculated attributions for `NT-VOT211`,`LaSOT`,`Nfs`,`AVisT`,`OTB100`,`DarkTrack2021`,`NAT2021` and `UAVDark135` in `meta.zip`
