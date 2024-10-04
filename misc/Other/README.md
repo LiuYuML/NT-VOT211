@@ -27,7 +27,5 @@ Input a number and click `jump` to navigate to the desired frame.
 ### Marking Attributes
 Click `out of view` or select `Occlusion` before drawing the rectangle to mark the attribute for the current frame.
 
-### Finishing the Annotation for Current Video
-Press `d` on the last frame 
-or 
-Click `skip` to complete the annotation for the current video.
+## Finishing the Annotation for Current Video
+Press `d` on the last frame or Click `skip` to complete the annotation for the current video.
