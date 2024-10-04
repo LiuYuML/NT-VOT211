@@ -1,4 +1,4 @@
-# Tutorial for submission
+![image](https://github.com/user-attachments/assets/224eae3f-b5ad-4c19-80cb-42943bc7893d)![image](https://github.com/user-attachments/assets/f7bbefc7-661e-4f19-b5f4-f54de8dae989)# Tutorial for submission
 ## Register an account
 To participate in our competition, hosted on [EvalAI](https://eval.ai), you'll need to have an account. Please sign up to join the challenge.
 
@@ -27,3 +27,18 @@ This information facilitates the potential citation of your method.
 
 If you wish your evaluation to appear on the **Leaderboard** during the public phase, please ensure that you check "Baseline" in **My Submissions**.
 ![image](https://github.com/user-attachments/assets/eb1241fd-2b38-4db3-a616-8c8714b21636)
+
+# Draw your attribution-wise evaluation
+As detailed in our paper, the evaluation server will also provide an attribution-wise evaluation. To access it, follow these steps:
+
+1. Navigate to "My Submissions."
+2. Select either "public" or "private" evaluation.
+3. Click on the "Link" under the "Result file" column.
+
+Here's what you'll see:
+![Screenshot of Evaluation Server](https://github.com/user-attachments/assets/c9032777-3334-476a-a172-f4b7a836440f)
+
+Copy the entire content, which should appear as follows:
+![Content to Copy](https://github.com/user-attachments/assets/ac558b49-ae60-42bf-b50f-f9c9b3283b10)
+
+Once copied, paste the data and save the result as `<Tracker Name>.json`. Ensure it is placed in the same directory as `attribute-wise drawing.py`.
