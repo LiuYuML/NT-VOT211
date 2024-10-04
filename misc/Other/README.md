@@ -26,3 +26,6 @@ Select a folder that contains the video files.
 
 ### Marking Attributes
 - Click `out of view` or select `Occlusion` before drawing the rectangle to mark the attribute for the current frame.
+
+### finish the annotation for current video
+press `d` on the last frame or click `skip` to finish the annotation for current frame.
