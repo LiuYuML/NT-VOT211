@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/224eae3f-b5ad-4c19-80cb-42943bc7893d)![image](https://github.com/user-attachments/assets/f7bbefc7-661e-4f19-b5f4-f54de8dae989)# Tutorial for submission
+# Tutorial for submission
 ## Register an account
 To participate in our competition, hosted on [EvalAI](https://eval.ai), you'll need to have an account. Please sign up to join the challenge.
 
