@@ -25,4 +25,4 @@ Select a folder that contains the video files.
 - Input a number and click `jump` to navigate to the desired frame.
 
 ### Marking Attributes
-- Click `out of view` or select 'Occlusion' before drawing the rectangle to mark the attribute for the current frame.
+- Click `out of view` or select `Occlusion` before drawing the rectangle to mark the attribute for the current frame.
