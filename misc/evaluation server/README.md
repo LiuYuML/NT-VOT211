@@ -41,7 +41,7 @@ Here's what you'll see:
 Copy the entire content, which should appear as follows:
 ![Content to Copy](https://github.com/user-attachments/assets/ac558b49-ae60-42bf-b50f-f9c9b3283b10)
 
-Once copied, paste the data and save the result as `<Tracker Name>.json`. Ensure it is placed in the same directory as `attribute-wise drawing.py`. More Details of `attribute-wise drawing.py` can be seen [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other)
+Once copied, paste the data and save the result as `<Tracker Name>.json`. Ensure it is placed in the same directory as `attribute-wise drawing.py`. 
 
 After configuring the following in `attribute-wise drawing.py`:
 
@@ -53,3 +53,4 @@ You can execute the drawing code by running:
 python attribute-wise drawing.py
 ```
 
+We have prepared a ready-to-run template for your convenience, which can be accessed **[here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other/att)**. 

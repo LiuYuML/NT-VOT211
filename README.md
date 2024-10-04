@@ -14,4 +14,5 @@ Please note that our challenge is divided into two phases: the **public phase** 
 
 We have implemented these limits to maintain a clean and readable leaderboard. We encourage all challengers to submit only their most competitive results on the public leaderboard.
 To evaluate your results, please follow this [tutorial](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/evaluation%20server).
-## Annotation tool and meta information
+# Annotation tool and meta information
+Annotation tool and meta information can be found [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other).
