@@ -19,7 +19,7 @@ Select a folder that contains the video files.
 - Click and drag the left mouse button to draw a rectangular area.
 
 ### Clearing Annotations
-- Type `clear` to clear the annotation for the current frame.
+- Click `clear` to clear the annotation for the current frame.
 
 ### Jumping to a Specific Frame
 - Input a number and click `jump` to navigate to the desired frame.
