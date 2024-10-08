@@ -77,7 +77,7 @@ class NT_VOT211Dataset(BaseDataset):
 
         frames_list = ['{}/img_{:05d}.jpg'.format(frames_path, frame_number) for frame_number in range(1, ground_truth_rect.shape[0] + 1)]
 
-        return Sequence(sequence_name, frames_list, 'xju211', ground_truth_rect.reshape(-1, 4), target_visible=target_visible)
+        return Sequence(sequence_name, frames_list, 'nt-vot211', ground_truth_rect.reshape(-1, 4), target_visible=target_visible)
 
     def get_attribute_names(self, mode='short'):
         if self.att_dict is None:
@@ -88,7 +88,7 @@ class NT_VOT211Dataset(BaseDataset):
 
     def _load_attributes(self):
         with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                               'dataset_attribute_specs', 'xju211_attributes.json'), 'r') as f:
+                               'dataset_attribute_specs', 'nt-vot211_attributes.json'), 'r') as f:
             att_dict = json.load(f)
         return att_dict
 
