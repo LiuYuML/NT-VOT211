@@ -59,7 +59,7 @@ class NT_VOT211Dataset(BaseDataset):
         return SequenceList([self._construct_sequence(s) for s in self.sequence_list])
 
     def _construct_sequence(self, sequence_name):
-        anno_path = '{}/anno/{}.txt'.format(self.base_path, sequence_name)
+        anno_path = '{}/GT/{}.txt'.format(self.base_path, sequence_name)
 
         ground_truth_rect = load_text(str(anno_path), delimiter=' ', dtype=np.float64)
 
