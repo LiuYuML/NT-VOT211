@@ -3,7 +3,7 @@ import os
 import json
 from pytracking.evaluation.data import Sequence, BaseDataset, SequenceList
 import pandas as pd
-
+import glob
 
 def load_text_numpy(path, delimiter, dtype):
     if isinstance(delimiter, (tuple, list)):
@@ -67,7 +67,9 @@ class NT_VOT211Dataset(BaseDataset):
 
         frames_path = '{}/sequences/{}'.format(self.base_path, sequence_name)
 
-        frames_list = ['{}/img_{:05d}.jpg'.format(frames_path, frame_number) for frame_number in range(1, ground_truth_rect.shape[0] + 1)]
+        jpg_files = glob.glob(frames_path + '/*.jpg')
+        jpg_count = len(jpg_files)
+        frames_list = ['{}/img_{:05d}.jpg'.format(frames_path, frame_number) for frame_number in range(1, jpg_count + 1)]
 
         return Sequence(sequence_name, frames_list, 'nt-vot211', ground_truth_rect.reshape(-1, 4), target_visible=target_visible)
 
