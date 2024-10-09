@@ -1,4 +1,55 @@
 # Tutorial for evaluation script
+
+## Unzip the ZIP File
+
+To unzip the file, execute the following bash command:
+
+```bash
+bash NT-VOT211_Unziper.sh
+```
+
+**Before running this command, ensure you have configured the following:**
+
+1. **Line 4:** Set the `ZIP_FILE_PATH` variable to the path of your ZIP file.
+   ```bash
+   ZIP_FILE_PATH="/path/to/NT-VOT211.zip"
+   ```
+
+2. **Line 7:** Define the `TARGET_PATH` variable to specify the directory where the contents of the ZIP file should be extracted.
+   ```bash
+   TARGET_PATH="/path/to/target"
+   ```
+
+**Example Configuration:**
+
+If your ZIP file is located at `/home/user/downloads/NT-VOT211.zip` and you want to extract it to `/home/user/projects/`, your script should look like this:
+
+```bash
+#!/bin/bash
+
+# Path to the ZIP file
+ZIP_FILE_PATH="/home/user/downloads/NT-VOT211.zip"
+
+# Target directory for extraction
+TARGET_PATH="/home/user/projects/"
+
+# Create the target folder if it doesn't exist
+mkdir -p "$TARGET_PATH"
+
+# Unzip the file to the target folder
+unzip -o "$ZIP_FILE_PATH" -d "$TARGET_PATH"
+
+# Check if the unzip operation was successful
+if [ $? -eq 0 ]; then
+    echo "Unzip successful."
+else
+    echo "Unzip failed."
+fi
+```
+
+---
+
+
 ## add the necessary files
 If you are using the official [pytracking](https://github.com/visionml/pytracking/tree/master) framework, please add the provided `nt_vot_211dataset.py` file to the `lib/test/evaluation` directory. For those using an adapted version of the pytracking framework, such as [ARTrack](https://github.com/MIV-XJTU/ARTrack), the file should be placed in the `pytracking/evaluation` directory. This directory usually looks like this:
 ![image](https://github.com/user-attachments/assets/8bf7bbab-360c-4d6d-8707-291df8d403e1)
