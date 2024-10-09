@@ -32,19 +32,6 @@ ZIP_FILE_PATH="/home/user/downloads/NT-VOT211.zip"
 
 # Target directory for extraction
 TARGET_PATH="/home/user/projects/"
-
-# Create the target folder if it doesn't exist
-mkdir -p "$TARGET_PATH"
-
-# Unzip the file to the target folder
-unzip -o "$ZIP_FILE_PATH" -d "$TARGET_PATH"
-
-# Check if the unzip operation was successful
-if [ $? -eq 0 ]; then
-    echo "Unzip successful."
-else
-    echo "Unzip failed."
-fi
 ```
 
 ---
