@@ -63,15 +63,7 @@ class NT_VOT211Dataset(BaseDataset):
 
         ground_truth_rect = load_text(str(anno_path), delimiter=' ', dtype=np.float64)
 
-        occlusion_label_path = '{}/full_occlusion/{}_full_occlusion.txt'.format(self.base_path, sequence_name)
-
-        # NOTE: pandas backed seems super super slow for loading occlusion/oov masks
-        full_occlusion = load_text(str(occlusion_label_path), delimiter=',', dtype=np.float64, backend='numpy')
-
-        out_of_view_label_path = '{}/out_of_view/{}_out_of_view.txt'.format(self.base_path, sequence_name)
-        out_of_view = load_text(str(out_of_view_label_path), delimiter=',', dtype=np.float64, backend='numpy')
-
-        target_visible = np.logical_and(full_occlusion == 0, out_of_view == 0)
+        target_visible = 1
 
         frames_path = '{}/sequences/{}'.format(self.base_path, sequence_name)
 
