@@ -5,7 +5,7 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 ## News  
 
-<sub>We will regularly update the links to the top three trackers right here:arrow_down:</sub>
+<sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
 :fire::fire::fire:
 
@@ -13,7 +13,7 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 :fire::fire::fire:
 
-<sub>We will regularly update the links to the top three trackers right here:arrow_up:</sub>
+<sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
 # How to benchmark:
 ## Download the dataset
