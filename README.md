@@ -3,7 +3,7 @@
 
 The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](www.google.com)\]
 
-## News <sub>We will provide the link to top three trackers.</sub>
+## News  <sub>(We will present the links to the top three trackers right here.)</sub>
 
 :fire::fire::fire:
 
