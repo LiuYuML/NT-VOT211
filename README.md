@@ -7,7 +7,7 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 :fire::fire::fire:
 
-2024-10 :tada:Our new challenging dataset [NT-VOT211](https://github.com/LiuYuML/NV-VOT211) is available now! <sub>Click the link on the right :rewind: to access our full tutorial for benchmarking on this new dataset.</sub>
+2024-10 :tada:
 
 :fire::fire::fire:
 
