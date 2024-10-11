@@ -5,15 +5,14 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 ## News  
 
-<sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
+:fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
-:fire::fire::fire:
+
 
 2024-10 :tada:
 
-:fire::fire::fire:
 
-<sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
+:fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
 # How to benchmark:
 ## Download the dataset
