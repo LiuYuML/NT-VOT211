@@ -2,6 +2,12 @@
 
 
 The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](www.google.com)\]
+![introc-1](https://github.com/user-attachments/assets/1a0e046a-0153-4c6f-acf2-5ba3e0c12b19)
+
+
+## Abstract
+>Many current visual object tracking benchmarks such as OTB100, NfS, UAV123, LaSOT, and GOT-10K, predominantly contain day-time scenarios while the challenges posed by the night-time has been less investigated. It is primarily because of the lack of a large-scale, well-annotated night-time benchmark for rigorously evaluating tracking algorithms. To this end, this paper presents NT-VOT211, a new benchmark tailored for evaluating visual object tracking algorithms in the challenging night-time conditions.
+NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames with 8 attributes including camera motion, deformation, fast motion, motion blur, tiny target, distractors, occlusion and out-of-view.
 
 ## News(last update 2024-10-14) 
 
@@ -9,9 +15,9 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 | Tracker     | 	AUC | Tracker | Precision |
 |:-----------:|:------------:|:-----------:|:-----------------:|
-| ProContEXT [paper](https://arxiv.org/abs/2210.15511) [code](https://github.com/jp-lan/procontext) | 40.10         | ODTrack [paper](https://arxiv.org/abs/2401.01686) [code](https://github.com/GXNU-ZhongLab/ODTrack)        | 55.80              |
-| KeepTrack [paper](https://arxiv.org/abs/2103.16556) [code](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)| 39.60         | KeepTrack  [paper](https://arxiv.org/abs/2103.16556) [code](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)      | 55.50              |
-| ODTrack [paper](https://arxiv.org/abs/2401.01686) [code](https://github.com/GXNU-ZhongLab/ODTrack) | 39.60         | ProContEXT [paper](https://arxiv.org/abs/2210.15511) [code](https://github.com/jp-lan/procontext)        | 54.50              |
+| [ProContEXT](https://github.com/jp-lan/procontext) | 40.10         | [ODTrack](https://github.com/GXNU-ZhongLab/ODTrack)        | 55.80              |
+| [KeepTrack](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)| 39.60         | [KeepTrack](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)      | 55.50              |
+| [ODTrack](https://github.com/GXNU-ZhongLab/ODTrack) | 39.60         | [ProContEXT](https://github.com/jp-lan/procontext)        | 54.50              |
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
@@ -31,3 +37,12 @@ We have implemented these limits to maintain a clean and readable leaderboard. W
 To evaluate your results, please follow this [tutorial](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/evaluation%20server).
 # Annotation tool and meta information
 Annotation tool and meta information can be found [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other).
+
+# Citation
+If you find our work valuable, we kindly ask you to consider citing our paper and starring ⭐ our repository. Our implementation includes dataset and useful tools and we hope it make life easier for the VOT research community.
+# Acknowledgments
+The dataloader code borrows heavily from [PyTracking](https://github.com/visionml/pytracking).
+# Maintenance
+Please open a GitHub issue for any help. If you have any questions regarding the technical details, feel free to contact us.
+# License
+[MIT License](https://mit-license.org/)
