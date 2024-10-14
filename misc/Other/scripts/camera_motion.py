@@ -50,55 +50,11 @@ def main(image_folder, base_output_path, dataset_name, index, threshold=2.0):
             print(output_file_path," Already Done!")
 # Example usage:
 if __name__ == "__main__":
-    #image_folder = r'C:\Users\leoyu\Desktop\OTBSpace\SOTDrawRect\OTB100'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\camera_motion'
+    #image_folder = r'<path-to-dataset>\OTB100'
+    #base_output_path = r'<output_path>\camera_motion'
     #dataset_name = 'otb'
-    #index = -3  # You can specify the desired index here
+    #index = -3  
     #main(image_folder, base_output_path, dataset_name, index)
 
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\avist\avist\sequences'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\camera_motion'
-    #dataset_name = 'avist'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
     
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\GOT-10k\GOT-10k\test'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\camera_motion'
-    #dataset_name = 'got10k_test'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
-    
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\test\sequences'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\camera_motion'
-    #dataset_name = 'XJU211'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
-    
-    
-    
-    #image_folder = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\VOT2018'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\camera_motion'
-    #dataset_name = 'VOT'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
-    
-    #image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\UAVDark135\UAVDark135_TSP_out\Sequences'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\camera_motion'
-    #dataset_name = 'UAVDark135'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
-    
-    
-    
-    #image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\NAT2021\NAT2021_test\NAT2021L\data_seq'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\camera_motion'
-    #dataset_name = 'NAT2021'
-    #index = -2  # You can specify the desired index here
-    #main(image_folder, base_output_path, dataset_name, index)
-    
-    image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\DarkTrack\DarkTrack2021\data_seq'
-    base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\camera_motion'
-    dataset_name = 'DarkTrack2021'
-    index = -2  # You can specify the desired index here
-    main(image_folder, base_output_path, dataset_name, index)
     
