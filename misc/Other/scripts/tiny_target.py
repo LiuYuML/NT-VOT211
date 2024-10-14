@@ -165,67 +165,11 @@ def main(image_folder, base_output_path, dataset_name, gt_path,gt_name,index,thr
                         output_file.write('0\n')
             print(output_file_path," Already Done!")
 # Example usage:
-if __name__ == "__main__":
-    #image_folder = r'C:\Users\leoyu\Desktop\OTBSpace\SOTDrawRect\OTB100'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\tiny_target'
-    #dataset_name = 'otb'
-    #index = -3  # You can specify the desired index here
-    #gt_path = r"C:\Users\leoyu\Desktop\OTBSpace\SOTDrawRect\OTB100"
-    #gt_name = r"groundtruth_rect.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path,gt_name,index)
-
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\avist\avist\sequences'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\tiny_target'
-    #dataset_name = 'avist'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"C:\Users\leoyu\Desktop\LeoSOTSpace\avist\avist\anno"
-    #gt_name = r"groundtruth_rect.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path,gt_name,index)
-    
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\GOT-10k\GOT-10k\test'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\tiny_target'
-    #dataset_name = 'got10k_test'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"C:\Users\leoyu\Desktop\LeoSOTSpace\GOT-10k\best_got_results\garbage_submission_2023_05_21_13_11_04"
-    #gt_name = r"_001.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path,gt_name,index)
-    
-    #image_folder = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\test\sequences'
-    #base_output_path = r'C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\utils\tiny_target'
-    #dataset_name = 'XJU211'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"C:\Users\leoyu\Desktop\LeoSOTSpace\NTB\test\anno"
-    #gt_name = r"groundtruth_rect.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path,gt_name,index)
-    
-    #image_folder = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\VOT2018'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\tiny_target'
-    #dataset_name = 'VOT'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\VOT2018"
-    #gt_name = r"groundtruth.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path, gt_name,index)
-    
-    #image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\DarkTrack\DarkTrack2021\data_seq'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\tiny_target'
-    #dataset_name = 'DarkTrack2021'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"E:\ly\ACCV\dataset\Other night benchmark\DarkTrack\DarkTrack2021\anno"
-    #gt_name = r"groundtruth.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path, gt_name,index)
-    
-    #image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\NAT2021\NAT2021_test\NAT2021L\data_seq'
-    #base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\tiny_target'
-    #dataset_name = 'NAT2021'
-    #index = -2  # You can specify the desired index here
-    #gt_path = r"E:\ly\ACCV\dataset\Other night benchmark\NAT2021\NAT2021_test\NAT2021L\anno"
-    #gt_name = r"groundtruth.txt"
-    #main(image_folder, base_output_path, dataset_name,gt_path, gt_name,index)
-    
-    image_folder = r'E:\ly\ACCV\dataset\Other night benchmark\UAVDark135\UAVDark135_TSP_out\Sequences'
-    base_output_path = r'D:\Documents\Desktop\ly\MBZUAI\Dataset CVPR\codes\tmp\tiny_target'
+if __name__ == "__main__":    
+    image_folder = r'<dataset_path>\Sequences'
+    base_output_path = r'<output_path>\tiny_target'
     dataset_name = 'UAVDark135'
     index = -2  # You can specify the desired index here
-    gt_path = r"E:\ly\ACCV\dataset\Other night benchmark\UAVDark135\UAVDark135_TSP_out\anno_revise"
+    gt_path = r"<anno_path>\anno_revise"
     gt_name = r"groundtruth.txt"
     main(image_folder, base_output_path, dataset_name,gt_path, gt_name,index)
