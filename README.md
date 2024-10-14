@@ -7,10 +7,11 @@ The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
-
-
-2024-10 :tada:
-
+| Tracker     | 	AUC | Tracker | Precision |
+|:-----------:|:------------:|:-----------:|:-----------------:|
+| ProContEXT [paper](https://arxiv.org/abs/2210.15511) [code](https://github.com/jp-lan/procontext) | 40.10         | ODTrack [paper](https://arxiv.org/abs/2401.01686) [code](https://github.com/GXNU-ZhongLab/ODTrack)        | 55.80              |
+| KeepTrack [paper](https://arxiv.org/abs/2103.16556) [code](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)| 39.60         | KeepTrack  [paper](https://arxiv.org/abs/2103.16556) [code](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#KeepTrack)      | 55.50              |
+| ODTrack [paper](https://arxiv.org/abs/2401.01686) [code](https://github.com/GXNU-ZhongLab/ODTrack) | 39.60         | ProContEXT [paper](https://arxiv.org/abs/2210.15511) [code](https://github.com/jp-lan/procontext)        | 54.50              |
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
