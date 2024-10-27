@@ -40,6 +40,16 @@ Annotation tool and meta information can be found [here](https://github.com/LiuY
 
 # Citation
 If you find our work valuable, we kindly ask you to consider citing our paper and starring ⭐ our repository. Our implementation includes dataset and useful tools and we hope it make life easier for the VOT research community.
+```bibtex
+@inproceedings{liu2024ntvot,
+  title={NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking},
+  author={Yu Liu and Arif Mahmood and Muhammad Haris Khan},
+  booktitle={Proceedings of the Asian Conference on Computer Vision (ACCV)},
+  pages={to be announced},
+  year={2024},
+  organization={Springer}
+}
+```
 # Acknowledgments
 The dataloader code borrows heavily from [PyTracking](https://github.com/visionml/pytracking).
 # Maintenance
