@@ -24,7 +24,7 @@ NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames
 # How to benchmark:
 ## Download the dataset
 You can download our dataset [here](https://zenodo.org/records/13768180?preview=1&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcyNzA1ODYxMCwiZXhwIjozMjUwNTQwNzk5OX0.eyJpZCI6IjQwOWY4OGU3LWU3YjMtNDQ3OS1hMTAzLTg1ODBmZTI0MDkxNSIsImRhdGEiOnt9LCJyYW5kb20iOiI4NDVhMzgzNzEwZTQxZjEwZWE1ZmVhYWJkY2M4N2M4NyJ9.7LuMtijWPL-fCaTBbRpyXC0hS3R_UEljpgjkQBUIlf1ssU4JIFPXukuIlZejbdKGXqTZ3rMy9irIO7k85Ehzdw).
-## Run the evaluation script
+## Run on our dataset
 Please follow these step-by-step [instructions](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/dataloader) to evaluate your algorithm.
 ## Evaluation on server
 **Challenge Phases:**
