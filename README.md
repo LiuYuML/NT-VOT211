@@ -1,7 +1,7 @@
 # NV-VOT211 ![Static Badge](https://img.shields.io/badge/The_Most_Challenging_VOT_Benchmark-ACCV2024%20Oral-blue)
 
 
-The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](www.google.com)\]
+The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](https://arxiv.org/abs/2410.20421)\]
 ![introc-1](https://github.com/user-attachments/assets/1a0e046a-0153-4c6f-acf2-5ba3e0c12b19)
 
 Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAAJ&hl=en),  [Muhammad Haris Khan](https://scholar.google.com/citations?user=ZgERfFwAAAAJ&hl=en)
