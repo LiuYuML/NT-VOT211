@@ -10,7 +10,6 @@ Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAA
 NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames with 8 attributes including camera motion, deformation, fast motion, motion blur, tiny target, distractors, occlusion and out-of-view.
 
 ## News(last update 2024-10-14) 
-
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
 | Tracker     | 	AUC | Tracker | Precision |
@@ -20,6 +19,8 @@ NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames
 | [ODTrack](https://github.com/GXNU-ZhongLab/ODTrack) | 39.60         | [ProContEXT](https://github.com/jp-lan/procontext)        | 54.50              |
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
+
+We maintain two leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions
 
 # How to benchmark:
 ## Download the dataset
