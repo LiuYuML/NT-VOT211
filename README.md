@@ -20,7 +20,7 @@ NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
-We maintain two leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions
+We maintain two leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions.
 
 # How to benchmark:
 ## Download the dataset
