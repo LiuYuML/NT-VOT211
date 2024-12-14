@@ -10,6 +10,9 @@ Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAA
 NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames with 8 attributes including camera motion, deformation, fast motion, motion blur, tiny target, distractors, occlusion and out-of-view.
 
 ## News(last update 2024-10-14) 
+* **2024-12:** 🏆 NT-VOT211 won ACCV’24 Best Application Paper Award! 
+* **2024-09:** NT-VOT211 is accepted as **ACCV 2024 Oral** Presentation.
+
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
 | Tracker     | 	AUC | Tracker | Precision |
@@ -20,11 +23,8 @@ NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_up:
 
-We maintain two leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211?metric=Precision),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions.
+We maintain two complete leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211?metric=Precision),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions.
 
-
-* **2024-12:** 🏆 NT-VOT211 won ACCV’24 Best Application Paper Award! 
-* **2024-09:** NT-VOT211 is accepted as **ACCV 2024 Oral** Presentation.
 
 
 # How to benchmark:
