@@ -22,6 +22,11 @@ NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames
 
 We maintain two leaderboards: one is featured on [Papers with Code](https://paperswithcode.com/sota/video-object-tracking-on-nv-vot211?metric=Precision),  and the other is on [EvalAI](https://eval.ai/web/challenges/challenge-page/2375/leaderboard/5892).  To submit a record on EvalAI, please adhere to the following instructions.
 
+
+* **2024-12:** 🏆 NT-VOT211 won ACCV’24 Best Application Paper Award! 
+* **2024-09:** NT-VOT211 is accepted as **ACCV 2024 Oral** Presentation.
+
+
 # How to benchmark:
 ## Download the dataset
 You can download our dataset [here](https://zenodo.org/records/13768180?preview=1&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTcyNzA1ODYxMCwiZXhwIjozMjUwNTQwNzk5OX0.eyJpZCI6IjQwOWY4OGU3LWU3YjMtNDQ3OS1hMTAzLTg1ODBmZTI0MDkxNSIsImRhdGEiOnt9LCJyYW5kb20iOiI4NDVhMzgzNzEwZTQxZjEwZWE1ZmVhYWJkY2M4N2M4NyJ9.7LuMtijWPL-fCaTBbRpyXC0hS3R_UEljpgjkQBUIlf1ssU4JIFPXukuIlZejbdKGXqTZ3rMy9irIO7k85Ehzdw).
