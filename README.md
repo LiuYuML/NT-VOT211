@@ -1,4 +1,4 @@
-# NV-VOT211 ![Static Badge](https://img.shields.io/badge/The_Most_Challenging_VOT_Benchmark-ACCV2024%20Oral-blue)
+# NV-VOT211 ![Static Badge](https://img.shields.io/badge/A_New_Challenging_Benchmark-red) ![Static Badge](https://img.shields.io/badge/Night_Tracking_Benchmark-ACCV_2024_Best_Application_Paper-blue) 
 
 
 The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](https://arxiv.org/abs/2410.20421)\]
