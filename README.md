@@ -9,6 +9,20 @@ Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAA
 >Many current visual object tracking benchmarks such as OTB100, NfS, UAV123, LaSOT, and GOT-10K, predominantly contain day-time scenarios while the challenges posed by the night-time has been less investigated. It is primarily because of the lack of a large-scale, well-annotated night-time benchmark for rigorously evaluating tracking algorithms. To this end, this paper presents NT-VOT211, a new benchmark tailored for evaluating visual object tracking algorithms in the challenging night-time conditions.
 NT-VOT211 consists of 211 diverse videos, offering 211,000 well-annotated frames with 8 attributes including camera motion, deformation, fast motion, motion blur, tiny target, distractors, occlusion and out-of-view.
 
+## About this new dataset
+### More challenging
+![image](https://github.com/user-attachments/assets/b8857529-8ccd-45aa-b275-60233dc6d46d)  ![benchlimit](https://github.com/user-attachments/assets/739cea3b-d4e5-4a81-82c4-f05fee4d1097)
+
+### Large in scale
+![comparision_to_SOTAs](https://github.com/user-attachments/assets/92f98e9c-6df0-443c-a81f-fea66b4ac143)
+
+### Unified frame-wise attribution
+![image](https://github.com/user-attachments/assets/0226815b-a208-4302-b496-ee997e7751c2)
+
+### More baselines
+![image](https://github.com/user-attachments/assets/94bb7b3c-0f3b-4980-bdeb-edebddd08c84)
+
+
 ## News(last update 2024-10-14) 
 * **2024-12:** 🏆 NT-VOT211 won ACCV’24 Best Application Paper Award! 
 * **2024-09:** NT-VOT211 is accepted as **ACCV 2024 Oral** Presentation.
