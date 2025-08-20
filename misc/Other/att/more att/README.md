@@ -1,3 +1,1 @@
-To run the `attribute-wise drawing.py` script we provided, simply place it in the same folder as the JSON files. The only configuration required is the `result_plot_path` on the first line, which specifies the storage location for the output images.
-
-Additionally, to provide more attribution plots, we have also included JSON files for attribution evaluations of other methods. You can find these files in the [more att](https://github.com/LiuYuML/NT-VOT211/tree/main/misc/Other/att/more%20att) directory.
+To directly provide attribution-wise evaluations for other methods, we offer attribution-wise evaluation plots that were not displayed in the papers. Additionally, you can leverage the provided JSON files to conduct customized comparisons between different methods.
