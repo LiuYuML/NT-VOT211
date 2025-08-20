@@ -49,4 +49,4 @@ You can download the attributions from [here](https://github.com/LiuYuML/NV-VOT2
 The scripts for attribution calculation can be found [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other/scripts)
 
 ## attribution-wise evaluation
-To obtain our attribution-wise evaluation plots, please refer to [this link](https://github.com/LiuYuML/NT-VOT211/edit/main/misc/Other/att/README.md ).
+To obtain our attribution-wise evaluation plots, please refer to [this link](https://github.com/LiuYuML/NT-VOT211/edit/main/misc/Other/att).
