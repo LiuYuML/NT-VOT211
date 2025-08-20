@@ -32,6 +32,7 @@ Press `d` on the last frame or Click `skip` to complete the annotation for the c
 
 
 # Meta information
+## attribution statistics
 We have provided calculated attributions for the following benchmarks:
 - `NT-VOT211`
 - `LaSOT`
@@ -44,4 +45,8 @@ We have provided calculated attributions for the following benchmarks:
 
 You can download the attributions from [here](https://github.com/LiuYuML/NV-VOT211/blob/main/misc/Other/meta.zip)
 
+## attribution calculation scripts
 The scripts for attribution calculation can be found [here](https://github.com/LiuYuML/NV-VOT211/tree/main/misc/Other/scripts)
+
+## attribution-wise evaluation
+To obtain our attribution-wise evaluation plots, please refer to [this link](https://github.com/LiuYuML/NT-VOT211/edit/main/misc/Other/att/README.md ).
