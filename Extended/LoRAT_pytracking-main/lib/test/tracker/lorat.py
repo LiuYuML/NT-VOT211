@@ -66,6 +66,7 @@ class LoRAT(BaseTracker):
     def __init__(self, params, dataset_name):
         super(LoRAT, self).__init__(params)
         network = build_lorat(params.cfg, training=False)
+        self.params.checkpoint = "/root/autodl-tmp/train/lorat/giant_378/LoRATBaseline_DINOv2_ep0011.pth.tar"
         ckpt = torch.load(self.params.checkpoint, map_location='cpu')
         if 'net' in ckpt:
             ckpt = ckpt['net']

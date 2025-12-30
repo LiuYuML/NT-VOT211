@@ -6,7 +6,7 @@ from lib.test.analysis.plot_results import plot_results, print_results, print_pe
 from lib.test.evaluation import get_dataset, trackerlist
 
 trackers = []
-dataset_name = 'avist' # choosen from 'uav', 'nfs', 'lasot_extension_subset', 'lasot'
+dataset_name = 'darktrack2021' # choosen from 'uav', 'nfs', 'lasot_extension_subset', 'lasot'
 
 """ostrack"""
 trackers.extend(trackerlist(name='lorat', parameter_name='giant_378', dataset_name=dataset_name,

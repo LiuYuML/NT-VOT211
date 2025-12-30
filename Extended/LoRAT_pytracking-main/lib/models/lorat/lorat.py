@@ -9,6 +9,80 @@ from lib.models.modules.head.mlp import MlpAnchorFreeHead
 from timm.layers import to_2tuple
 from lib.models.lorat.builder import build_dino_v2_backbone
 import numpy as np
+import torch.nn.init as init
+import torch.nn.functional as F
+class TokenEnhancer(nn.Module):
+    def __init__(self, channel_dim, hidden_dim=64, num_heads=8):
+        """
+        Args:
+            channel_dim (int): 输入 token 的通道维度
+            hidden_dim (int): 隐藏层维度
+            num_heads (int): 自注意力机制的头数
+        """
+        super(TokenEnhancer, self).__init__()
+        self.channel_dim = channel_dim
+        self.hidden_dim = hidden_dim
+        self.num_heads = num_heads
+
+        # 自注意力模块
+        self.self_attn = nn.MultiheadAttention(embed_dim=channel_dim, num_heads=num_heads, batch_first=True)
+
+        # 多尺度特征融合
+        self.fc1 = nn.Linear(channel_dim, hidden_dim)
+        self.fc2 = nn.Linear(hidden_dim, channel_dim)
+
+        # 残差连接和归一化
+        self.norm1 = nn.LayerNorm(channel_dim)
+        self.norm2 = nn.LayerNorm(channel_dim)
+
+        # 动态权重生成网络
+        self.EC_extract = nn.Sequential(
+            nn.Linear(channel_dim, hidden_dim),
+            nn.ReLU(),
+            nn.Linear(hidden_dim, channel_dim),
+            nn.Sigmoid()
+        )
+        self._initialize_weights()
+
+    def _initialize_weights(self):
+        # 初始化 MultiheadAttention 的权重
+        for name, param in self.self_attn.named_parameters():
+            if 'weight' in name:
+                init.xavier_uniform_(param)
+            elif 'bias' in name:
+                init.constant_(param, 0.0)
+
+        # 初始化全连接层的权重
+        init.xavier_uniform_(self.fc1.weight)
+        init.constant_(self.fc1.bias, 0.0)
+        init.xavier_uniform_(self.fc2.weight)
+        init.constant_(self.fc2.bias, 0.0)
+
+        # 初始化动态权重生成网络的权重
+        for layer in self.EC_extract:
+            if isinstance(layer, nn.Linear):
+                init.xavier_uniform_(layer.weight)
+                init.constant_(layer.bias, 0.0)
+
+
+    def forward(self, x, class_mask):
+        b, n, c = x.shape
+
+        # 自注意力机制
+        attn_output, _ = self.self_attn(x, x, x)
+        x = self.norm1(x + attn_output)
+
+        # 多尺度特征融合
+        x_ = self.fc2(F.relu(self.fc1(x)))
+        x = self.norm2(x + x_)
+
+        ec = self.EC_extract(x)
+        
+
+        return ec
+
+
+
 class LoRATBaseline_DINOv2(nn.Module):
     def __init__(self, vit: DinoVisionTransformer,
                  template_feat_size: Tuple[int, int],
@@ -23,6 +97,7 @@ class LoRATBaseline_DINOv2(nn.Module):
         self.blocks = vit.blocks
         self.norm = vit.norm
         self.embed_dim = vit.embed_dim
+        self.TE = TokenEnhancer(self.embed_dim)
 
         self.pos_embed = nn.Parameter(torch.empty(1, self.x_size[0] * self.x_size[1], self.embed_dim))
         self.pos_embed.data.copy_(interpolate_pos_encoding(vit.pos_embed.data[:, 1:, :],
@@ -38,8 +113,8 @@ class LoRATBaseline_DINOv2(nn.Module):
     def forward(self, z: torch.Tensor, x: torch.Tensor, z_feat_mask: torch.Tensor,class_list=None):
         z_feat = self._z_feat(z, z_feat_mask)
         x_feat = self._x_feat(x)
-        x_feat = self._fusion(z_feat, x_feat,class_list=class_list)
-        return self.head(x_feat)
+        x_feat,resmax = self._fusion(z_feat, x_feat,class_list=class_list)
+        return self.head(x_feat,resmax)
         # score_map: [B, H, W]
         # boxes:     [B, H, W, 4]
 
@@ -119,7 +194,7 @@ class LoRATBaseline_DINOv2(nn.Module):
     
     
     
-    def _fusion(self, z_feat: torch.Tensor, x_feat: torch.Tensor,class_list=None):
+    def _fusion_(self, z_feat: torch.Tensor, x_feat: torch.Tensor,class_list=None):
         fusion_feat = torch.cat((z_feat, x_feat), dim=1)
         for i in range(len(self.blocks)):
             fusion_feat = self.blocks[i](fusion_feat)
@@ -137,6 +212,34 @@ class LoRATBaseline_DINOv2(nn.Module):
             #print(correlation_map[:,class_mask].shape) #torch.Size([1, 27])
         #print("leo",correlation_map.shape) leo torch.Size([1, 729])
         return fusion_feat[:, z_feat.shape[1]:, :]
+    
+    def _fusion(self, z_feat: torch.Tensor, x_feat: torch.Tensor,class_list=None):
+        fusion_feat = torch.cat((z_feat, x_feat), dim=1)
+        for i in range(len(self.blocks)):
+            fusion_feat = self.blocks[i](fusion_feat)
+        fusion_feat = self.norm(fusion_feat)
+        if class_list is not None:
+            class_array = np.array(class_list)
+            class_mask = class_array!=0
+            tmp = fusion_feat[:, z_feat.shape[1]:, :]
+            
+            tmp_ = torch.zeros_like(tmp)
+        
+            inverted_mask = ~class_mask
+
+            tmp_[:, inverted_mask, :] = tmp[:, inverted_mask, :]
+            
+            
+            ec = self.TE(tmp,class_mask) # 取消注释可以恢复训练
+            
+            resmax  = tmp_ - ec
+            resmax[:, class_mask, :] = 0
+            resmax = torch.clamp(resmax, min=0)
+            
+
+            return tmp-ec,resmax
+        return fusion_feat[:, z_feat.shape[1]:, :],None
+    
 
     # def load_state_dict(self, state_dict: Mapping[str, Any], **kwargs):
     #     state_dict = lora_merge_state_dict(self, state_dict)
@@ -156,7 +259,9 @@ def build_lorat(cfg, training=True):
 
     if training:
         ckpt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../", "pretrained", cfg.MODEL.PRETRAIN_FILE))
-        missing_keys, unexpected_keys = model.load_state_dict(torch.load(ckpt_path), strict=True)
+        missing_keys, unexpected_keys = model.load_state_dict(torch.load(ckpt_path), strict=False)
+        # Missing key(s) in state_dict: "TE.EC_extract.0.weight", "TE.EC_extract.0.bias", 
+        # "TE.EC_extract.2.weight", "TE.EC_extract.2.bias". 
         print(f"missing_keys when load LoRAT whole model: {missing_keys}")
         print(f"unexpected_keys when load LoRAT whole model: {unexpected_keys}")
 

@@ -71,7 +71,7 @@ class MlpAnchorFreeHead(nn.Module):
                 nn.init.constant_(m.weight, 1.0)
         self.apply(_init_weights)
 
-    def forward(self, x):
+    def forward(self, x, delta):
         '''
             Args:
                 x (torch.Tensor): (B, H * W, C) input feature map
@@ -97,4 +97,4 @@ class MlpAnchorFreeHead(nn.Module):
         x2y2 = bbox_offset.unsqueeze(0) + rb
         box_map = torch.cat((x1y1, x2y2), dim=-1)
 
-        return {'score_map': score_map, 'boxes': box_map}
+        return {'score_map': score_map, 'boxes': box_map, "delta":delta}

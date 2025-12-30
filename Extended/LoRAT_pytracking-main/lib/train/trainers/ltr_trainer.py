@@ -135,8 +135,29 @@ class LTRTrainer(BaseTrainer):
         print("Avg GPU Trans Time: %.5f" % (self.avg_gpu_trans_time / self.num_frames * batch_size))
         print("Avg Forward Time: %.5f" % (self.avg_forward_time / self.num_frames * batch_size))
 
+    def freeze_layers(self, model, layers_to_train):
+        """
+        Freeze layers in the model except the ones specified in layers_to_train.
+        
+        Args:
+            model: The model to modify.
+            layers_to_train: A list of layer names to keep trainable.
+        """
+        for name, param in model.named_parameters():
+            if layers_to_train in name:
+                param.requires_grad = True
+            else:
+                param.requires_grad = False
+
+        # Optionally, print the status of each layer
+        for name, param in model.named_parameters():
+            print(f"Layer {name} is {'trainable' if param.requires_grad else 'frozen'}")
+    
+    
     def train_epoch(self):
         """Do one epoch for each loader."""
+        trained_layers_ = "TE"
+        self.freeze_layers(self.actor.net, trained_layers_)
         for loader in self.loaders:
             if self.epoch % loader.epoch_interval == 0:
                 # 2021.1.10 Set epoch

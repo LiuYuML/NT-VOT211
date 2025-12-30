@@ -169,6 +169,8 @@ class BaseTrainer:
                                                                              self.settings.project_path, net_type)))
             if checkpoint_list:
                 checkpoint_path = checkpoint_list[-1]
+            elif True:
+                checkpoint_path = "/root/autodl-tmp/giant_378.pth"
             else:
                 print('No matching checkpoint file found')
                 return
@@ -190,9 +192,10 @@ class BaseTrainer:
             raise TypeError
 
         # Load network
+        print("loaded path:",checkpoint_path)
         checkpoint_dict = torch.load(checkpoint_path, map_location='cpu')
 
-        assert net_type == checkpoint_dict['net_type'], 'Network is not of correct type.'
+        #assert net_type == checkpoint_dict['net_type'], 'Network is not of correct type.'
 
         if fields is None:
             fields = checkpoint_dict.keys()
@@ -226,6 +229,7 @@ class BaseTrainer:
             for loader in self.loaders:
                 if isinstance(loader.sampler, DistributedSampler):
                     loader.sampler.set_epoch(self.epoch)
+        print("loaded finished")
         return True
 
     def load_state_dict(self, checkpoint=None, distill=False):

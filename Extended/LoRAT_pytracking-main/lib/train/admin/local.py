@@ -4,8 +4,8 @@ class EnvironmentSettings:
         self.tensorboard_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/tensorboard'    # Directory for tensorboard files.
         self.pretrained_networks = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/pretrained_networks'
         self.lasot_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/lasot'
-        self.got10k_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/got10k/train'
-        self.got10k_val_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/got10k/val'
+        self.got10k_dir = '/root/autodl-tmp/datasets/got10k/train'
+        self.got10k_val_dir = '/root/autodl-tmp/datasets/got10k/val'
         self.lasot_lmdb_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/lasot_lmdb'
         self.got10k_lmdb_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/got10k_lmdb'
         self.trackingnet_dir = '/root/LY/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/LoRAT_pytracking-main/data/trackingnet'

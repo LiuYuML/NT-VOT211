@@ -9,3 +9,4 @@ python tracking/train.py --script lorat --config large_384 --save_dir ./output -
 # Giant
 python tracking/train.py --script lorat --config giant_224 --save_dir ./output --mode multiple --nproc_per_node 2
 python tracking/train.py --script lorat --config giant_378 --save_dir ./output --mode multiple --nproc_per_node 2
+# python tracking/train.py --script lorat --config giant_378 --save_dir ./output --mode single
