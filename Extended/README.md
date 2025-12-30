@@ -13,7 +13,10 @@ Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAA
 >Night-time tracking fails because background and target tokens become indistinguishable in low light. We propose a lightweight Token Enhancer (TE) that separates them in embedding space—trained only on daylight data, no night samples needed. It boosts SOTA trackers on 4 night benchmarks with +0.2M params and +0.15 GFLOPs—the first zero-shot domain adaptation method for VOT.
 
 
+## Code
+In this work, we introduce a novel analytical perspective on night-time tracking failures—namely, the collapse of target-background token separability in low-light conditions—and propose a lightweight, plug-and-play module that can be seamlessly integrated into any existing tracking algorithm. Remarkably, it requires only minimal fine-tuning on standard daylight datasets to achieve significant performance gains in night-time scenarios.
 
+Specifically, the proposed code is lie in 
 
 
 <details>
@@ -41,13 +44,18 @@ We introduce a lightweight, plug-and-play **Token Enhancer (TE)** module that:
 
 **Result**:  
 Consistently boosts SOTA trackers across **4 night-time benchmarks**, achieving **new SOTA performance** — the **first zero-shot domain adaptation approach in VOT**.
+
+<img width="776" height="405" alt="image" src="https://github.com/user-attachments/assets/a8d9c045-4d02-45f5-8105-4479331809fb" />
+
+
+
 </details>
 
 
 <details>
 <summary><b>Qualitative Results</b></summary>
 
-![Qualitative comparison on night-time tracking](path/to/your/image.png)
+<img width="898" height="785" alt="image" src="https://github.com/user-attachments/assets/0060a5c5-9873-4039-8489-1997952e9b81" />
 
 
 </details>
