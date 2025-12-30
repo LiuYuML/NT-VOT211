@@ -16,7 +16,20 @@ Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAA
 ## Code
 In this work, we introduce a novel analytical perspective on night-time tracking failures—namely, the collapse of target-background token separability in low-light conditions—and propose a lightweight, plug-and-play module that can be seamlessly integrated into any existing tracking algorithm. Remarkably, it requires only minimal fine-tuning on standard daylight datasets to achieve significant performance gains in night-time scenarios.
 
-Specifically, the proposed code is lie in 
+The implementation of the proposed **Token Enhancer (TE)** module is located at:
+
+[Extended/LoRAT_pytracking-main/lib/models/lorat/lorat.py](https://github.com/LiuYuML/NT-VOT211/blob/main/Extended/LoRAT_pytracking-main/lib/models/lorat/lorat.py)
+
+The main results and model checkpoints are stored in:
+
+[Google  Could](https://drive.google.com/drive/folders/1owJkZiW8PPINPXM1ucRhXEKBpEe23s-8?usp=drive_link)
+
+[Bai DU](https://pan.baidu.com/s/1RZgDQs0pIflp6b95rrqHbA?pwd=37xc)
+
+
+Our code is heavily borrowed from [OSTrack](), [LoRAT](), to run out sript,please check:
+[README](https://github.com/LiuYuML/NT-VOT211/edit/main/Extended/LoRAT_pytracking-main/README.md)
+
 
 
 <details>
