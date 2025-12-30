@@ -1,14 +1,30 @@
 # NT-VOT211 ![Static Badge](https://img.shields.io/badge/A_New_Challenging_Benchmark-red) ![Static Badge](https://img.shields.io/badge/Night_Tracking_Benchmark-ACCV_2024_Best_Application_Paper-blue) 
 
 
-The official implementation for the ACCV 2024 paper \[[_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](https://arxiv.org/abs/2410.20421)\]
+The official repository for **NT-VOT211**, introduced in:  
+- **ACCV 2024 (Oral, Best Application Paper Honorable Mention)**: [_NT-VOT211: A Large-Scale Benchmark for Night-time Visual Object Tracking_](https://arxiv.org/abs/2410.20421)  
+- **IJCV 2026 (Extended Journal Version)**: [_A Comprehensive Benchmark for Evaluating Night-time Visual Object Tracking_](https://doi.org/10.1007/s11263-025-02661-7)
 ![introc-1](https://github.com/user-attachments/assets/1a0e046a-0153-4c6f-acf2-5ba3e0c12b19)
 
 Yu Liu,  [Arif Mahmood](https://scholar.google.com.sg/citations?user=_e6yGs4AAAAJ&hl=en),  [Muhammad Haris Khan](https://scholar.google.com/citations?user=ZgERfFwAAAAJ&hl=en)
 
 ## News(last update 2024-12-14) 
+* **2025-12:** 🎉 Our extended work, *A Comprehensive Benchmark for Evaluating Night-time Visual Object Tracking*, has been accepted by **International Journal of Computer Vision (IJCV)**! [Link](https://doi.org/10.1007/s11263-025-02661-7 )
 * **2024-12:** 🏆 NT-VOT211 won [ACCV’24 Best Application Paper Honorable Mention!](https://accv2024.org/awards/) 
 * **2024-09:** NT-VOT211 is accepted as **ACCV 2024 Oral** Presentation.
+
+
+## Code
+
+:point_down::point_down::point_down:    extended code    :point_down::point_down::point_down::point_down:
+
+[Code for newly introduced components in the extended paper](Extended/)
+
+:point_up::point_up::point_up:    extended code    :point_up::point_up::point_up::point_up:
+
+
+
+## Dataset
 
 :fire::fire::fire: <sub>We will regularly update the links to the top three trackers right here</sub> :arrow_down:
 
@@ -69,6 +85,19 @@ If you find our work valuable, we kindly ask you to consider citing our paper an
   year={2024},
   organization={Springer}
 }
+
+@article{liu2026comprehensive,
+  title={A Comprehensive Benchmark for Evaluating Night-time Visual Object Tracking},
+  author={Liu, Yu and Mahmood, Arif and Khan, Muhammad Haris},
+  journal={International Journal of Computer Vision},
+  volume={134},
+  pages={21},
+  year={2026},
+  publisher={Springer},
+  doi={10.1007/s11263-025-02661-7},
+  url={https://doi.org/10.1007/s11263-025-02661-7}
+}
+
 ```
 # Acknowledgments
 The dataloader code borrows heavily from [PyTracking](https://github.com/visionml/pytracking).
