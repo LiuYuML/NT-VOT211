@@ -24,18 +24,18 @@ class TokenEnhancer(nn.Module):
         self.hidden_dim = hidden_dim
         self.num_heads = num_heads
 
-        # 自注意力模块
+
         self.self_attn = nn.MultiheadAttention(embed_dim=channel_dim, num_heads=num_heads, batch_first=True)
 
-        # 多尺度特征融合
+
         self.fc1 = nn.Linear(channel_dim, hidden_dim)
         self.fc2 = nn.Linear(hidden_dim, channel_dim)
 
-        # 残差连接和归一化
+
         self.norm1 = nn.LayerNorm(channel_dim)
         self.norm2 = nn.LayerNorm(channel_dim)
 
-        # 动态权重生成网络
+
         self.EC_extract = nn.Sequential(
             nn.Linear(channel_dim, hidden_dim),
             nn.ReLU(),
@@ -45,20 +45,17 @@ class TokenEnhancer(nn.Module):
         self._initialize_weights()
 
     def _initialize_weights(self):
-        # 初始化 MultiheadAttention 的权重
         for name, param in self.self_attn.named_parameters():
             if 'weight' in name:
                 init.xavier_uniform_(param)
             elif 'bias' in name:
                 init.constant_(param, 0.0)
 
-        # 初始化全连接层的权重
         init.xavier_uniform_(self.fc1.weight)
         init.constant_(self.fc1.bias, 0.0)
         init.xavier_uniform_(self.fc2.weight)
         init.constant_(self.fc2.bias, 0.0)
 
-        # 初始化动态权重生成网络的权重
         for layer in self.EC_extract:
             if isinstance(layer, nn.Linear):
                 init.xavier_uniform_(layer.weight)
@@ -68,11 +65,11 @@ class TokenEnhancer(nn.Module):
     def forward(self, x, class_mask):
         b, n, c = x.shape
 
-        # 自注意力机制
+
         attn_output, _ = self.self_attn(x, x, x)
         x = self.norm1(x + attn_output)
 
-        # 多尺度特征融合
+
         x_ = self.fc2(F.relu(self.fc1(x)))
         x = self.norm2(x + x_)
 
