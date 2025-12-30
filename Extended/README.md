@@ -1,4 +1,4 @@
-# Extended Code for IJCV 2026![Static Badge](https://img.shields.io/badge/Token_Enhancer-red)![Static Badge](https://img.shields.io/badge/Light_Weight-green)![Static Badge](https://img.shields.io/badge/High_Dimensional_Token_Analysis-blue)
+# Extended Code for IJCV 2026      ![Static Badge](https://img.shields.io/badge/Token_Enhancer-red)![Static Badge](https://img.shields.io/badge/Light_Weight-green)![Static Badge](https://img.shields.io/badge/High_Dimensional_Token_Analysis-blue)
 
 
 This repository contains the official code and resources for the **extended journal version**:  
